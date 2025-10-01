@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rensell - Rent, Sell & Buy Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trial.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>Rensell</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Rent Items</a></li>
+                        <li><a href="#">Sell Items</a></li>
+                        <li><a href="#">List Items</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Login</button>
+                    <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Buy, Sell & Rent Items</h1>
+            <p>Connect with students on campus to trade textbooks, electronics, furniture, and more. Save money and reduce waste!</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items (textbooks, electronics, furniture...)">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Featured Items</h2>
+        
+        <div class="main-content">
+            <aside class="filters">
+                <h3>Filters</h3>
+                
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" checked> Books</label>
+                        <label><input type="checkbox"> Electronics</label>
+                        <label><input type="checkbox"> Sports Equipment</label>
+                        <label><input type="checkbox"> Clothing</label>
+                        <label><input type="checkbox"> Other</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Transaction Type</h4>
+                    <div class="filter-options">
+                        <label><input type="radio" name="type" checked> Both</label>
+                        <label><input type="radio" name="type"> For Rent</label>
+                        <label><input type="radio" name="type"> For Sale</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <div class="price-range">
+                        <input type="number" placeholder="Min" value="0">
+                        <input type="number" placeholder="Max" value="100">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Condition</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" checked> New</label>
+                        <label><input type="checkbox"> Like New</label>
+                        <label><input type="checkbox"> Good</label>
+                        <label><input type="checkbox"> Fair</label>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+            </aside>
+
+            <section class="items-grid">
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-book"></i>
+                        <span class="item-type">For Rent</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Calculus Textbook</h3>
+                        <div class="item-price">50rs/week</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i> Pankaj Shinde</span>
+                            <span><i class="fas fa-calendar"></i> 2 days ago</span>
+                        </div>
+                        <p>Refered by Ajhar Shaikh</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">Rent Now</button>
+                            <button class="btn-buy">Message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-laptop"></i>
+                        <span class="item-type">For Sale</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Calci</h3>
+                        <div class="item-price">50rs/week</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i> Atharv Jadhav</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                        <p>Casio</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">View Details</button>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-tshirt"></i>
+                        <span class="item-type">For Sale</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Chemistry Lab Apron</h3>
+                        <div class="item-price">80rs/sem</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i> Chaitanya</span>
+                            <span><i class="fas fa-calendar"></i> 1 day ago</span>
+                        </div>
+                        <p>Medium Size</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">View Details</button>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-headphones"></i>
+                        <span class="item-type">For Rent</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Wireless Headphones</h3>
+                        <div class="item-price">30rs/day</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i>Pratiksha Kale</span>
+                            <span><i class="fas fa-calendar"></i> 3 days ago</span>
+                        </div>
+                        <p>Brand new, excellent sound quality</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">Rent Now</button>
+                            <button class="btn-buy">Message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-tshirt"></i>
+                        <span class="item-type">For Sale</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Chemistry Lab Apron</h3>
+                        <div class="item-price">80rs/sem</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i> Chaitanya</span>
+                            <span><i class="fas fa-calendar"></i> 1 day ago</span>
+                        </div>
+                        <p>Medium Size</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">View Details</button>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <i class="fas fa-couch"></i>
+                        <span class="item-type">For Sale</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Study Table</h3>
+                        <div class="item-price">1200rs</div>
+                        <div class="item-meta">
+                            <span><i class="fas fa-user"></i>Nita Gore</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                        <p>Wooden</p>
+                        <div class="item-actions">
+                            <button class="btn-rent">View Details</button>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="post-item">
+            <h2>List Your Item for Rent or Sale</h2>
+            <form id="item-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="item-title">Item Title</label>
+                        <input type="text" id="item-title" placeholder="e.g., Calculus Textbook">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="item-category">Category</label>
+                        <select id="item-category">
+                            <option value="">Select Category</option>
+                            <option value="textbook">Textbook</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="sports">Sports Equipment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transaction-type">Transaction Type</label>
+                        <select id="transaction-type">
+                            <option value="">Select Type</option>
+                            <option value="rent">For Rent</option>
+                            <option value="sale">For Sale</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="item-price">Price</label>
+                        <input type="number" id="item-price" placeholder="0.00">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="item-description">Description</label>
+                        <textarea id="item-description" placeholder="Describe your item..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="item-condition">Condition</label>
+                        <select id="item-condition">
+                            <option value="">Select Condition</option>
+                            <option value="new">New</option>
+                            <option value="like-new">Like New</option>
+                            <option value="good">Good</option>
+                            <option value="fair">Fair</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="item-contact">Contact Info</label>
+                        <input type="text" id="item-contact" placeholder="Email or Phone">
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Post Item</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Rensell</h3>
+                    <p>The ultimate platform for students to buy, sell, and rent items on campus.</p>
+                    <div class="social-icons">
+                        
+                        
+                        <a href="https://www.instagram.com/om_deore98?igsh=MXkxM2RraTc0ZnBjMQ=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/om-deore-25445a32a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BkzeBhBNQvC%2FLbxa6tpCRQ%3D%3D"><i class="fab fa-linkedin-in" ></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rent Items</a></li>
+                        <li><a href="#">Sell Items</a></li>
+                        <li><a href="#">List Items</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Textbooks</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Sports Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> MIT AOE ,Alandi</li>
+                        <li><i class="fas fa-phone"></i> +91 9860132650</li>
+                        <li><i class="fas fa-envelope"></i> omdeore424@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    
+</body>
+</html>

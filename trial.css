@@ -35,7 +35,7 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+        
         header {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
@@ -134,7 +134,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Hero Section */
+       
         .hero {
             padding: 5rem 0;
             text-align: center;
@@ -188,14 +188,14 @@
             background: var(--primary);
         }
 
-        /* Main Content */
+     
         .main-content {
             display: flex;
             gap: 30px;
             margin-bottom: 3rem;
         }
 
-        /* Filters Sidebar */
+        
         .filters {
             flex: 0 0 280px;
             background: white;
@@ -262,7 +262,28 @@
             outline: none;
         }
 
-        /* Items Grid */
+        
+        .book-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .boat-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .casio-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+         .apron-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+         }
         .items-grid {
             flex: 1;
             display: grid;
@@ -386,7 +407,7 @@
             background: var(--primary-dark);
         }
 
-        /* Post Item Section */
+        
         .post-item {
             background: white;
             border-radius: 12px;
@@ -535,7 +556,7 @@
             font-size: 0.9rem;
         }
 
-        /* Section Title */
+       
         .section-title {
             text-align: center;
             margin: 3rem 0 2rem;
@@ -554,7 +575,7 @@
             border-radius: 2px;
         }
 
-        /* Responsive Design */
+        
         @media (max-width: 992px) {
             .main-content {
                 flex-direction: column;
